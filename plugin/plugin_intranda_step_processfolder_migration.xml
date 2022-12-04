@@ -12,10 +12,43 @@
         <project>*</project>
         <step>*</step>
         
-        <!-- sample parameter -->
-        <value>test</value>
-        <!-- display button to finish the task directly from within the entered plugin -->
-        <allowTaskFinishButtons>true</allowTaskFinishButtons>
+        <!-- a rule specifies what shall happen inside of the process folder
+        	- `action` defines what shall be done:
+        		- `move`: renaming of the source path to a new target path
+        		- `delete`: deleting the folder or file
+        		- `create`: create a folder under the given source path
+        		- `copy`: renaming of the source path to a new target path
+        	- `source` is the relative path inside of the process folder that is to be adapted
+        	- `target`: is the new name that shall be given to the source path if this is available, 
+        				a wildcard is only allowed for the part of the path if action is 'delete'
+        	
+        	Please notice that the rules are executed in the order they are listed here.
+		 -->
+        <rule action="move" source="images/master_{processtitle}_media" target="images/orig_{processtitle}_tif" />
+        <rule action="move" source="images/{processtitle}_media" target="images/{processtitle}_tif" />
+        <rule action="create" source="trallala/" />
+        <rule action="copy" source="thumbs/master_{processtitle}_media_400" target="trallala/ich_war_hier_{processtitle}_tif_400" />
+        <rule action="move" source="thumbs/master_{processtitle}_media_400" target="thumbs/orig_{processtitle}_tif_400" />
+        <rule action="move" source="thumbs/master_{processtitle}_media_800" target="thumbs/orig_{processtitle}_tif_800" />
+        <!-- 
+        <rule action="delete" source="images/layoutWizzard-temp" />
+        -->
+        <rule action="delete" source="taskmanager" />
+        <rule action="delete" source="ocr1" />
+        <rule action="create" source="bla/blu/" />
+        <rule action="delete" source="thumbs/orig_{processtitle}_tif_400" />
+        <!-- 
+        <rule action="delete" source="images/layoutWizzard-temp/analysis/0000000.?.tif" />
+        <rule action="delete" source="images/layoutWizzard-temp/analysis/000000.?.?.tif" />
+        <rule action="delete" source="images/layoutWizzard-temp/analysis/00000.*.tif" />
+        <rule action="delete" source="images/layoutWizzard-temp/analysis/00000.*" />
+        <rule action="delete" source="imageData.xml..*" />
+        -->
+        <rule action="delete" source="images/layoutWizzard-temp/analysis/000000.?.?.tif" />
+        <rule action="delete" source="imageData.xml..*" />
+        <rule action="delete" source="meta.xml..*" />
+        <rule action="delete" source="meta_anchor.xml..*" />
+        <rule action="delete" source=".*_db_export.xml" />
     </config>
 
 </config_plugin>
