@@ -7,7 +7,7 @@
     <relativePath />
   </parent>
   <groupId>io.goobi.workflow.plugin</groupId>
-  <artifactId>plugin-step-processfolder_migration</artifactId>
+  <artifactId>plugin-step-processfolder-migration</artifactId>
   <packaging>pom</packaging>
   <modules>
     <module>module-base</module>

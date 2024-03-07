@@ -2,9 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.goobi.workflow.plugin</groupId>
-    <artifactId>plugin-step-processfolder_migration</artifactId>
+    <artifactId>plugin-step-processfolder-migration</artifactId>
     <version>24.03-SNAPSHOT</version>
   </parent>
-  <artifactId>plugin-step-processfolder_migration-base</artifactId>
+  <artifactId>plugin-step-processfolder-migration-base</artifactId>
   <packaging>jar</packaging>
 </project>
