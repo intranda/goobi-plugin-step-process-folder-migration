@@ -1,5 +1,5 @@
 ---
-title: Bewegung von Prozessordnern
+title: Migration von Vorgangsverzeichnissen
 identifier: intranda_step_processfolder_migration
 description: Step Plugin für Bearbeitung von Verzeichnissen und Ordnern
 published: true
