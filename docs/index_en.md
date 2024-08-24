@@ -40,4 +40,4 @@ The plugin is configured in the file `plugin_intranda_step_processfolder_migrati
 | `move`                  | This action moves a folder or directory from the current location to the destination location. |
 | `copy`                  | This action copies a folder or directory and inserts it at the destination location. |
 | `source`                | This is the folder or directory from which an action should be performed, for example, copying a file from this folder. |
-| `target`                | This is the folder or directory to which an action should be performed, for example, copying a file to this folder. |
+| `target`                | This parameter defines the directory to which an action should be performed (for example, copying a file to this folder). |
