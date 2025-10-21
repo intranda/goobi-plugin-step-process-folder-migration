@@ -3,6 +3,10 @@ title: Process folder migration
 identifier: intranda_step_processfolder_migration
 description: Step plugin for directory and folder processing
 published: true
+keywords:
+    - Goobi workflow
+    - Plugin
+    - Step Plugin
 ---
 
 ## Introduction
